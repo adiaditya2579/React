@@ -8,11 +8,13 @@ function App() {
   const [coutnt , adityacounter] = useState(0)
 
   const addvalue = ()=>{
-    if(coutnt === 20){
+    if(coutnt >= 20){
       coutnt = 20
     }else{
 
       adityacounter(coutnt+1)
+      adityacounter( prevCoutnt => prevCoutnt+1)
+      adityacounter( prevCoutnt => prevCoutnt+1)
     }
   }
   const removeValue = ()=>{
